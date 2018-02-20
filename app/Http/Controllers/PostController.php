@@ -35,10 +35,6 @@ class PostController extends Controller
     	return  view('showdetail',compact('data'));
     	//return view('post');
     }
-    public function sample()
-    {
-        
-    }
 
 }
 
