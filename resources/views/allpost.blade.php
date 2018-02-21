@@ -6,7 +6,7 @@
           </div>
           <ul>
           @foreach($data as $res)
-          <li><a href="/post/{{$res->id}}">{{$res->title}}</a></li>
+          <li><a href="/post/{{$res->id}}">{{$res->title}}</a> -  <a href="/post/{{$res->id}}/delete">Delete</a></li>
           @endforeach
         </ul>
         </main>

@@ -15,7 +15,12 @@ Route::get('/', function () {
 });
 
 Route::get('/', 'PostController@index');
-Route::get('/post', 'PostController@show');
-Route::get('/post/{id}', 'PostController@showdetail');
-Route::POST('/post', 'PostController@create');
+Route::get('/post', 'PostController@create');
+Route::get('/post/{id}', 'PostController@show');
+Route::POST('/post', 'PostController@store');
 
+Route::get('/post/{id}/edit', 'PostController@edit');
+Route::POST('/post/{id}/update', 'PostController@update');
+
+
+Route::get('/post/{id}/delete', 'PostController@destroy');
